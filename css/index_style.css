@@ -1,0 +1,780 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*  ---Шапка сайта---  */
+
+
+    /* --- Верх шапки --- */ 
+
+.upper_header {
+    height: 50px;
+    background-color: #ba0000;
+}
+
+.language, 
+.country_profile {
+    border: none;
+    background-color: #ba0000;
+    color: #fff;
+    border-radius: 0;
+}
+
+.upper_header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-right: 30px;
+}
+
+.upper_header a:hover {
+    color: #ffcc00;
+    text-decoration: ;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.upper_header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper_header .wrapper div {
+    position: relative;
+    top: 12.5px;
+}
+
+
+    /* Навигационные ссылки */
+
+nav {
+    height: 120px;
+    background-color: #ffcc00;
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 35px;
+}
+
+.navigations_links {
+    display: flex;
+}
+
+.navigations_links li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navigations_links a {
+    text-decoration: none;
+    margin-right: 40px;
+    color: #ba0000;
+}
+
+.navigations_links a:hover {
+    font-weight: 700;
+    border-bottom: 4px solid #ba0000;
+    padding-bottom: 49px;
+}
+
+.search_ot_site {
+    background-color: #ba0000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 18px 0px rgba(186, 0, 0, 0.4);
+}
+
+/*
+.search_ot_site a {
+    display: block;   --- для расширения площади ссылки; ??? ---
+}
+*/
+
+.search_ot_site a::after {
+    content: '';
+    display: block;
+    background-image: url(../images/icons/search_icon.png);
+    width: 14px;
+    height: 15px;
+    position: relative;
+    top: 18px;
+    left: 18px;
+}
+
+
+    /* --- Баннер ---*/
+
+.banner_header {
+    background-image: -moz-linear-gradient( 45deg, rgb(186,0,0) 0%, rgba(221,102,0,0.05) 95%, rgba(255,204,0,0.01) 99%, rgb(255,204,0) 100%), url(../images/backgrounds/header_banner.png);
+    background-image: -webkit-linear-gradient( 45deg, rgb(186,0,0) 0%, rgba(221,102,0,0.05) 95%, rgba(255,204,0,0.01) 99%, rgb(255,204,0) 100%), url(../images/backgrounds/header_banner.png);
+    background-image: -ms-linear-gradient( 45deg, rgb(186,0,0) 0%, rgba(221,102,0,0.05) 95%, rgba(255,204,0,0.01) 99%, rgb(255,204,0) 100%), url(../images/backgrounds/header_banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    font-size: 20px;
+    color: #fff;
+    
+    height: 800px;
+}
+
+.banner_header span, 
+.dhl_button {
+    text-transform: uppercase;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 70px;
+    margin: 0;
+    line-height: 1.15;
+    width: 430px;
+    padding-top: 180px;
+}
+
+
+.banner_header span {
+    text-transform: uppercase;
+}
+
+.decorative_yellow_line {
+    width: 100px;
+    height: 4px;
+    background-color: #ffcc00;
+}
+
+.decorative_yellow_line + p {
+    color: #ffcc00;
+    width: 740px;
+    line-height: 1.5;
+}
+
+p span {
+    font-weight: 500;
+    margin-right: 60px;
+    display: inline-block;
+}
+
+.decorative_yellow_line, 
+p span {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+#quick::before, 
+#quick::after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #ffcc00;
+    position: relative;
+    border-radius: 50%;
+}
+
+#quick::before {
+    right: 30px;
+}
+
+#quick::after {
+    left: 30px;
+}
+
+.dhl_button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    padding: 20px 40px;
+    margin-right: 20px;
+}
+
+.dhl_button :hover {
+    color: #ba0000;
+    background-color: #ffcc00;
+    font-weight: 700;
+    border-color: #ffcc00;
+    box-shadow: 0px 10px 18px 0px rgba(255, 204, 0, 0.4);
+}
+
+/* --- Наши услуги ---*/
+
+
+#services_header {
+    font-size: 150px;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+#awesome_serv_header {
+    font-size: 50px;
+    color: #ba0000;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    text-transform: capitalize;
+}
+
+.our_services {
+    display: flex;
+}
+
+.services_details {
+    width: 270px;
+    margin-right: 30px;
+}
+
+.services_details h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ba0000;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.services_details h3 + p {
+    color: #777777;
+    font-size: 16px;
+    width: 250px;
+}
+
+.services_details a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #222222;
+    position: relative;
+}
+
+.services_details a:hover {
+    color: #ba0000;
+}
+
+.services_details a::after {
+    content: '';
+    
+    border-top: 5px solid transparent;
+    border-left: 7px solid #ba0000;
+    border-bottom: 5px solid transparent;
+    
+    margin-left: 5px;
+    position: absolute;
+    top: 6.5px;
+}
+
+#dhl_worldwide {
+    margin-right: 0;
+    background-color: #ba0000;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+
+#dhl_worldwide h3, 
+#dhl_worldwide p {
+    color: #fff;
+}
+
+#dhl_worldwide h3 {
+    margin: 0 0 30px 0;
+    text-transform: capitalize;
+}
+
+abbr {
+    text-transform: uppercase; /* увеличение регистра DHL в заголовке */
+}
+
+#dhl_worldwide p {
+    width: 210px;
+    font-size: 16px;
+}
+
+.location {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 10px;
+    width: 210px;
+    background-color: #9d0000;
+    color: #fff;
+    border: none;
+}
+
+#dhl_worldwide a::after {
+    display: none; /* убирает треугольник после ссылки на кнопках */
+}
+
+#dhl_worldwide .dhl_button {
+    margin-top: 30px;
+}
+
+#dhl_worldwide a  {
+    color: #fff;
+    font-weight: 600;
+}
+
+#dhl_worldwide a:hover {
+    color: #ba0000;
+    font-weight: 700;
+}
+
+.slim_decorative_yellow_line {
+    width: 70px;
+    height: 2px;
+    background-color: #ffcc00;
+}
+
+/* --- Снабжение ---*/
+
+.provision {
+    height: 700px;
+    background-image: -moz-linear-gradient( 90deg, rgba(255,204,0,0.70196) 0%, rgba(186,0,0,0.3) 100%), url(../images/backgrounds/provision_banner.png);
+    background-image: -webkit-linear-gradient( 90deg, rgba(255,204,0,0.70196) 0%, rgba(186,0,0,0.3) 100%), url(../images/backgrounds/provision_banner.png);
+    background-image: -ms-linear-gradient( 90deg, rgba(255,204,0,0.70196) 0%, rgba(186,0,0,0.3) 100%), url(../images/backgrounds/provision_banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 100px;
+    margin-bottom: 310px;
+}
+
+.provision h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    margin-top: 0;
+    padding-top: 150px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+.playig_video_bttn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    box-shadow: 0px 10px 18px 0px rgba(255, 204, 0, 0.4);
+    position: relative;
+}
+
+.playig_video_bttn a {
+    display: block;
+    width: 70px;
+}
+
+.playig_video_bttn a .fa-play {
+    font-size: 20px;
+    color: #ba0000;
+    position: absolute;
+    top: 27px;
+    left: 29px;
+}
+
+.provision_details {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 183px;
+}
+
+.provision_details div {
+    box-shadow: 0px 10px 18px 0px rgba(191, 191, 191, 0.4);
+}
+
+.provision_details h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #ba0000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.provision_details li {
+    color: #777777;
+    font-size: 16px;
+    text-transform: capitalize;
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+.provision_details ul {
+    position: relative;
+    right: 10px; /* выравнивание по левому края заголовка */
+}
+
+.provision_details li::before {
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-left: 7px solid #ffcc00; /* задание цвета треугольников */
+    border-bottom: 5px solid transparent;
+    margin-right: 10px;
+}
+
+
+/* --- Оформление заказа ---*/
+
+.ordering_blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order_form {
+    width: 570px;
+    background-color: #ba0000;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+    /* --- Вкладки --- */
+
+.tabs {
+    position: relative; /* Относительное позиционирование */
+}
+
+.tab, .tab-title {
+    display: inline-block; /* Выстраивание вкладок по горизонтали */
+}
+
+.tab input[type="radio"] {
+    display: none; /* Скрытие радио-кнопок у вкладок */
+}
+
+.tab-title {
+    width: 282px; /* 285px ??? */
+    text-align: center;
+    font-weight: 500;
+    background: #ffcc00; /* Цвет фона */
+    color: #ba0000;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 3px;
+    cursor: pointer; /* курсор-указатель на неактивной вкладке */
+    margin-bottom: 40px;
+}
+
+.tab-content {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; /* Размещаем у левого края */
+    padding: 10px; /* Поля вокруг текста */
+    width: 570px; /* Ширина содержимого */
+    display: none; /* Прячем вкладку */
+}
+
+.tab :checked + .tab-title {
+    position: relative; /* Относительное позиционирование */
+    background: #ba0000; /* Цвет фона */
+    top: 2px; /* Сдвигаем вниз */
+    cursor: default; /* обычный курсор на активной вкладке */
+    color: #fff;
+    font-weight: 700;
+    /*z-index: 1; /* Отображаем поверх содержимого */
+}
+
+.tab :checked + .tab-title + .tab-content {
+    display: block; /* Показываем активную вкладку */
+}
+
+
+    /* --- "Аккордеон" --- */
+
+ .ac_tab input, 
+ .ac_tab-content {    
+    display: none; /* скрытие кнопок */
+}
+
+ .ac_tab {
+    border: 1px solid #fff; /* Параметры рамки */
+    color: #fff; /* Цвет текста */
+    margin-bottom: 20px; /* Расстояние между пунктами */
+}
+
+ .ac_tab-title {
+    padding: 15px 30px; /* Поля вокруг текста */
+    display: block; /* Блочный элемент */
+    font-weight: 500;
+    cursor: pointer; /* Вид курсора */
+}
+
+ .ac_tab-title::after {
+    content: '+'; /* Выводим плюс */
+    float: right; /* Размещаем + по правому краю */
+}
+
+ .ac_tab-content {
+    padding: 0 30px; /* Поля вокруг текста содержимого */
+}
+
+ .ac_tab :checked + .ac_tab-title {
+    background-color: #ffcc00; /* Цвет фона */
+    color: #ba0000; /* Цвет текста */
+    font-weight: 700; 
+}
+
+ .ac_tab :checked + .ac_tab-title::after {
+    content: '−'; /* Выводим минус */
+     
+}
+
+ .ac_tab :checked ~ .ac_tab-content {
+    display: block; /* Показываем содержимое */
+}
+
+.ac_tab :checked {
+    border: 1px solid #ffcc00; /* Параметры рамки  ??? */
+}
+
+
+    /* --- список под катом --- */
+
+h4 {
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.ac_list {
+    text-transform: capitalize;
+    font-size: 16px;
+    list-style-type: none;
+    line-height: 1.5;
+    padding: 0;
+    margin-top: 0;
+}
+
+.ac_list li::before{
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-left: 7px solid #ffcc00;
+    border-bottom: 5px solid transparent;
+    margin-right: 10px;
+    margin-left: 5px; /* сдвиг относительно заголовка */ 
+}
+
+
+    /* --- Фото в рамке --- */
+
+.photo {
+    background-image: -webkit-linear-gradient( 90deg, rgb(255,204,0) 0%, rgba(255,255,255,0) 100%), url(../images/ordering_images/bayer_trust_us_image.png);
+    background-image: -moz-linear-gradient( 90deg, rgb(255,204,0) 0%, rgba(255,255,255,0) 100%), url(../images/ordering_images/bayer_trust_us_image.png);
+    background-image: -ms-linear-gradient( 90deg, rgb(255,204,0) 0%, rgba(255,255,255,0) 100%), url(../images/ordering_images/bayer_trust_us_image.png);
+    height: 499px;
+    width: 435px;
+    position: relative;
+    z-index: 300;
+}
+
+.photo_border {
+    height: 499px;
+    width: 435px;
+    border: 20px solid #ffcc00;
+    position: absolute;
+    top: -35px;
+    right: 35px;
+    z-index: -1000;
+}
+
+.photo_logo {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+
+
+
+/* --- Качества компании ---*/
+
+
+.our_features {
+    height: 350px;
+    background-color: #ba0000;
+    color: #fff;
+    margin-top: 200px;
+}
+
+.our_features .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_features a {
+    margin: 0;
+}
+
+.our_features .dhl_button {
+    position: relative;
+    top: 175px;
+}
+
+.our_features h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 100px 0 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.our_features p {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 730px;
+}
+
+
+/* --- Продукты ??? --- */
+
+
+.add_products section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.add_products section div {
+    display: inline-block;
+    width: 270px;
+    height: 129px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 2px solid #eedbdb;
+    background-color: #f9f9f9;
+}
+
+.add_products section div:hover {
+    border: 2px solid #ba0000;
+}
+
+.add_products section div#prod_1 {
+    background-image: url(../images/features_images/themeforest-light-background.png);
+}
+
+.add_products section div#prod_2 {
+    background-image: url(../images/features_images/photodune-light-background.png);
+}
+
+.add_products section div#prod_3 {
+    background-image: url(../images/features_images/graphicriver-light-background.png);
+}
+
+.add_products section div#prod_4 {
+    background-image: url(../images/features_images/codecanyon-light-background.png);
+}
+
+/*  ---Подвал сайта---  */
+
+.footer {
+    background-color: #ba0000;
+    color: #777777;
+    height: 311px;
+    margin-top: 0;
+    /*border: 1px solid red;*/
+    text-transform: uppercase;
+}
+
+.footer_blocks {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.footer_blocks img {
+    background-color: #fff;
+}
+
+.footer_lists {
+    margin-right: 200px;
+    width: 180px;
+}
+
+.footer_blocks div:last-child {
+    margin-right: 0;
+}
+
+.footer h3 {
+    font-size: 20px;
+    color: #ba0000;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+
+.footer a {
+    color: #777777;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.footer ul {
+    margin-top: 0;
+    position: relative;
+    right: 40px; /* выравнивание по левому края заголовка */
+}
+
+.footer li {
+    list-style-type: none;
+    width: 250px;
+}
+
+.footer a:hover {
+    color: #ffcc00;
+}
+
+#social_media a:hover {
+    color: #017edf;
+}
+
+.footer li::before{
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-left: 7px solid #ba0000; /* задание цвета треугольников */
+    border-bottom: 5px solid transparent;
+    margin-right: 10px;
+}
+
+
+
+/* --- clearfix --- */
+
+.clearfix {
+    clear: both;
+}
